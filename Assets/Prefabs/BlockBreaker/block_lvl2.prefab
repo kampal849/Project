@@ -121,4 +121,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 15
   hitsToBreak: 2
-  hitSprite: {fileID: 21300000, guid: ea29655aa2871944d903d9f26149a7de, type: 3}
+  hitSprite:
+  - {fileID: 21300000, guid: ead0e614a3df68a41bb7d74724d0969a, type: 3}

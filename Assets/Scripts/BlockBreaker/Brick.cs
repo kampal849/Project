@@ -6,12 +6,12 @@ public class Brick : MonoBehaviour
 {
     public int points;
     public int hitsToBreak;
-    public Sprite hitSprite;
+    public Sprite[] hitSprite;
     
     public void BreakBrick()
     {
         hitsToBreak--;
-        GetComponent<SpriteRenderer>().sprite = hitSprite;
+        GetComponent<SpriteRenderer>().sprite = hitSprite[hitsToBreak - 1];
     }
 
     
