@@ -25,7 +25,8 @@ public class Ball : MonoBehaviour
     {
         if(gm.gameOverBool)
         {
-            return;     //przestan sie ruszac jak nie ma zyc
+            rb.velocity = Vector2.zero;             //zeby nie wylecialo z platformy
+            inPlay = false;
         }
 
         if(!inPlay)

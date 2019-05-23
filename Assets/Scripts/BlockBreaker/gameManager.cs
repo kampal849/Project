@@ -81,9 +81,10 @@ public class gameManager : MonoBehaviour
     }
 
     void loadLevel()
+       
     {
         currentLevelIndex++;
-        Instantiate(levels[currentLevelIndex], Vector2.zero, Quaternion.identity); //zmien level
+        Instantiate(levels[currentLevelIndex], new Vector2(-1,3), Quaternion.identity); //zmien level
         numberOfBricks = GameObject.FindGameObjectsWithTag("brick").Length;
         gameOverBool = false;
         loadLevelPanel.SetActive(false);
@@ -91,12 +92,12 @@ public class gameManager : MonoBehaviour
 
     public void playAgain()
     {
-        SceneManager.LoadScene("level1");  //przy nacisnieciu play again wroc do sceny1 (lub zagranej TODO)
+        SceneManager.LoadScene("BBLevel1");  //przy nacisnieciu play again wroc do sceny1 (lub zagranej TODO)
     }
 
     public void Quit()
     {
-        SceneManager.LoadScene("Menu");  //(TODO zrob scene MENU)
+        SceneManager.LoadScene("BBLevel1");  //( MENU)
     }
 
 
