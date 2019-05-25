@@ -6,20 +6,13 @@ using UnityEngine.UI;
 
 public class GameMenu : MonoBehaviour
 {
-    
     public Text highScoreText;
 
     // Start is called before the first frame update
     void Start()
     {
         //PlayerPrefs.SetInt("highscore",0);
-        highScoreText.text = PlayerPrefs.GetInt("highscore").ToString();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        highScoreText.text = Vault.GetScore(GameType.Tetris).ToString();
     }
 
     public void PlayGame()

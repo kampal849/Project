@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainController : MonoBehaviour
 {
-    public int score, hiscore, scene;
+    public int score, scene;
 
     // Start is called before the first frame update
     void Start()
@@ -13,7 +13,6 @@ public class MainController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         score = 0;
-        hiscore = 0;
 
         LoadLevel(1);
     }
@@ -27,14 +26,16 @@ public class MainController : MonoBehaviour
     {
         scene = num;
 
-        if(scene >= SceneManager.sceneCountInBuildSettings) scene = 1;
-        else if(scene < 1) scene = SceneManager.sceneCountInBuildSettings - 1;
+        if(scene > 8) scene = 1;
+        else if(scene < 1) scene = 8;
         SceneManager.LoadScene("MGLevel" + scene.ToString());
     }
 
     public void ExitGame()
     {
-        Application.Quit();
+        UpdateScore();
+        SceneManager.LoadScene("reklama");
+        Destroy(gameObject);
     }
 
     public void PrevLvl()
@@ -45,5 +46,13 @@ public class MainController : MonoBehaviour
     public void NextLvl()
     {
         LoadLevel(scene + 1);
+    }
+
+    void UpdateScore()
+    {
+        Vault.AddTotalScore(score);
+
+        if(score > Vault.GetScore(GameType.MG))
+            Vault.SetScore(GameType.MG, score);
     }
 }

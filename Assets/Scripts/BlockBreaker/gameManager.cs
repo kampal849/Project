@@ -8,7 +8,7 @@ public class gameManager : MonoBehaviour
 {
 
     public int lives;
-    public int score;
+    public int score, thisScore;
     public Text livesText;
     public Text scoreText;
     public bool gameOverBool;
@@ -77,11 +77,13 @@ public class gameManager : MonoBehaviour
     {
         gameOverBool = true;  //w update dla balla zatrzymuje wszystko
 
+        if(score > Vault.GetScore(GameType.BB)) Vault.SetScore(GameType.BB, score);
+        Vault.AddTotalScore(score);
+
         gameOverPanel.SetActive(true);  //pokaz panel gameover
     }
 
-    void loadLevel()
-       
+    void loadLevel() 
     {
         currentLevelIndex++;
         Instantiate(levels[currentLevelIndex], new Vector2(-1,3), Quaternion.identity); //zmien level
@@ -97,7 +99,7 @@ public class gameManager : MonoBehaviour
 
     public void Quit()
     {
-        SceneManager.LoadScene("BBLevel1");  //( MENU)
+        SceneManager.LoadScene("reklama");  //( MENU)
     }
 
 

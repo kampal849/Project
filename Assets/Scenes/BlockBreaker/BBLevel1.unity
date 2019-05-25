@@ -463,6 +463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 3
   score: 0
+  thisScore: 0
   livesText: {fileID: 284306990}
   scoreText: {fileID: 642274860}
   gameOverBool: 0
@@ -1151,11 +1152,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 447147791}
     - target: {fileID: 8591016942938191098, guid: d16522c7c9086fa4490cd329532c59b6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: playAgain
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591016940996436863, guid: d16522c7c9086fa4490cd329532c59b6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 447147791}
+    - target: {fileID: 8591016940996436863, guid: d16522c7c9086fa4490cd329532c59b6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d16522c7c9086fa4490cd329532c59b6, type: 3}

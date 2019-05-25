@@ -7,16 +7,14 @@ public class BallController : MonoBehaviour
     enum Sound{hit, win};
 
     public List<AudioClip> soundList;
-    public GameObject oController;
     public float normalDrag, slowDrag;
-
     GameController gameController;
     Rigidbody2D rBall;
     AudioSource audioSource;
 
     private void Start() 
     {
-        gameController = oController.GetComponent<GameController>();
+        gameController = GameObject.Find("GameController").GetComponent<GameController>();
         rBall = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
     }

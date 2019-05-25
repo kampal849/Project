@@ -42,6 +42,66 @@ public class Tetromino : MonoBehaviour
         }
     }
 
+    //touch movement   
+    private int touchSensitivityHorizontal = 8;
+    private int touchSensitivityVertical = 4;
+    Vector2 previousUnitPosition = Vector2.zero;
+    Vector2 direction = Vector2.zero;
+
+    bool moved = false;
+
+    void CheckUserInput()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch t = Input.GetTouch(0);
+
+            if (t.phase == TouchPhase.Began)
+            {
+                previousUnitPosition = new Vector2(t.position.x, t.position.y);
+            }
+
+            else if (t.phase == TouchPhase.Moved)
+            {
+                Vector2 touchDeltaPosition = t.deltaPosition;
+                direction = touchDeltaPosition.normalized;
+                if (Mathf.Abs(t.position.x - previousUnitPosition.x) >= touchSensitivityHorizontal && direction.x < 0 && t.deltaPosition.y > -10 && t.deltaPosition.y < 10)
+                {
+                    MoveLeft();
+                    previousUnitPosition = t.position;
+                    moved = true;
+
+                }
+
+                else if (Mathf.Abs(t.position.x - previousUnitPosition.x) >= touchSensitivityHorizontal && direction.x > 0 && t.deltaPosition.y > -10 && t.deltaPosition.y < 10)
+                {
+                    MoveRight();
+                    previousUnitPosition = t.position;
+                    moved = true;
+                }
+
+                else if (Mathf.Abs(t.position.y - previousUnitPosition.y) >= touchSensitivityVertical && direction.y < 0 && t.deltaPosition.x > -10 && t.deltaPosition.x < 10)
+                {
+                    MoveDown();
+                    previousUnitPosition = t.position;
+                    moved = true;
+
+                }
+
+
+            }
+
+            else if (t.phase == TouchPhase.Ended)
+            {
+                if (!moved && t.position.x > Screen.width / 4)
+                {
+                    Rotate();
+                }
+                moved = false;
+            }
+        }
+    }
+    /*
     void CheckUserInput()
     {
 
@@ -83,7 +143,7 @@ public class Tetromino : MonoBehaviour
 
 
     }
-
+    */
     void MoveLeft()
     {
         if (movedImmediateHorizontal)

@@ -12,6 +12,6 @@ public class MenuSystem : MonoBehaviour
 
     public void GameMenu()
     {
-        SceneManager.LoadScene("Tetris_Menu");
+        SceneManager.LoadScene("reklama");
     }
 }

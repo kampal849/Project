@@ -29,7 +29,7 @@ public class Bonus_pos : MonoBehaviour
         {
 
             Vector3 car_position = new Vector3(Random.Range(minx, maxx), transform.position.y, transform.position.z);
-            int carnumber = Random.Range(0, 5);
+            int carnumber = Random.Range(0, 1);
             Instantiate(car[carnumber], car_position, transform.rotation);
 
             if (speedtime > 0)

@@ -46,7 +46,7 @@ public class Game : MonoBehaviour
     {
         SpawnNextTetromino();
 
-        startingHighScore = PlayerPrefs.GetInt("highscore");
+        startingHighScore = Vault.GetScore(GameType.Tetris);
     }
 
     void Update()
@@ -134,7 +134,7 @@ public class Game : MonoBehaviour
     {
         if (currentScore > startingHighScore)
         {
-            PlayerPrefs.SetInt("highscore",currentScore);
+            Vault.SetScore(GameType.Tetris, currentScore);
         }
     }
 
@@ -326,6 +326,8 @@ public class Game : MonoBehaviour
 
     public void GameOver()
     {
+        Vault.AddTotalScore(currentScore);
+
         SceneManager.LoadScene("Tetris_GameOver");
     }
 }

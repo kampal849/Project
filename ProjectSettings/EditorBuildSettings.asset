@@ -53,10 +53,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigolf/MGLevel8.unity
     guid: b949d37e35d14f446b1342869742d9a4
-  - enabled: 1
-    path: Assets/Scenes/BlockBreaker/BBMenu.unity
-    guid: 6bc3c290651c87842859980880dc46cf
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/BlockBreaker/BBLevel1.unity
     guid: 7a447cca9a61a0c46a72d3ece46c2239
+  - enabled: 1
+    path: Assets/Scenes/Snake/Snake_Menu.unity
+    guid: 01e2da458a3fcb540be5ddfff6f6ce2d
+  - enabled: 1
+    path: Assets/Scenes/Snake/SnakeLevel1.unity
+    guid: 5f649f2bd505b404fb586ec9c36ccb61
+  - enabled: 1
+    path: Assets/Scenes/reklama.unity
+    guid: d106da36d8d307342afc0b10d454bbac
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

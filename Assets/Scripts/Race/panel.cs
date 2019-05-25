@@ -11,15 +11,19 @@ public class panel : MonoBehaviour
 
     public Text scoretext;
     int score;
-    bool gameover;
+    public bool gameover;
     public Button[] buttons;
     public Text GameOverText;
     public Text GameOverText2;
+    public Text LevelText;
+    public GameObject level;
+
     void Start()
     {
         gameover = false;
         score = 0;
         InvokeRepeating ("scoreupdate", 0.5f, 0.5f);
+        level = GameObject.FindWithTag("Quad");
     }
 
 
@@ -31,6 +35,7 @@ public class panel : MonoBehaviour
     {
         
         scoretext.text = "Score: " + score;
+        LevelText.text = "Level: " + (level.GetComponent<trackmove>().ustaw +1);
     }
 
 
@@ -52,6 +57,9 @@ public class panel : MonoBehaviour
             button.gameObject.SetActive(true);
         }
 
+        if(score > Vault.GetScore(GameType.Race)) Vault.SetScore(GameType.Race, score);
+        Vault.AddTotalScore(score);
+
         GameOverText2.text = "Total score: " + score;
         GameOverText.gameObject.SetActive(true);
         GameOverText2.gameObject.SetActive(true);
@@ -72,6 +80,6 @@ public class panel : MonoBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadScene("Race_Menu");
+        SceneManager.LoadScene("reklama");
     }
 }

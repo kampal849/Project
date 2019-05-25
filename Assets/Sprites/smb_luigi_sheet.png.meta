@@ -1,0 +1,255 @@
+fileFormatVersion: 2
+guid: 7707fa76124532a43bbc26f4201b756e
+timeCreated: 1520679139
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: luigi1
+    21300002: luigi2
+    21300004: luigi3
+    21300006: luigi4
+    21300008: smb_luigi_sheet_0
+    21300010: smb_luigi_sheet_1
+    21300012: smb_luigi_sheet_2
+    21300014: smb_luigi_sheet_3
+    21300016: smb_luigi_sheet_4
+    21300018: smb_luigi_sheet_5
+    21300020: luigi0
+    21300022: smb_luigi_sheet_7
+    21300024: smb_luigi_sheet_8
+    21300026: smb_luigi_sheet_9
+    21300028: smb_luigi_sheet_10
+    21300030: smb_luigi_sheet_11
+    21300032: smb_luigi_sheet_12
+    21300034: smb_luigi_sheet_13
+    21300036: smb_luigi_sheet_14
+    21300038: smb_luigi_sheet_15
+    21300040: smb_luigi_sheet_16
+    21300042: smb_luigi_sheet_17
+    21300044: smb_luigi_sheet_18
+    21300046: smb_luigi_sheet_19
+    21300048: smb_luigi_sheet_20
+    21300050: smb_luigi_sheet_21
+    21300052: smb_luigi_sheet_22
+    21300054: smb_luigi_sheet_23
+    21300056: smb_luigi_sheet_24
+    21300058: smb_luigi_sheet_25
+    21300060: smb_luigi_sheet_26
+    21300062: smb_luigi_sheet_27
+    21300064: smb_luigi_sheet_28
+    21300066: smb_luigi_sheet_29
+    21300068: smb_luigi_sheet_30
+    21300070: smb_luigi_sheet_31
+    21300072: smb_luigi_sheet_32
+    21300074: smb_luigi_sheet_33
+    21300076: smb_luigi_sheet_34
+    21300078: smb_luigi_sheet_35
+    21300080: smb_luigi_sheet_36
+    21300082: smb_luigi_sheet_37
+    21300084: smb_luigi_sheet_38
+    21300086: smb_luigi_sheet_39
+    21300088: smb_luigi_sheet_40
+    21300090: smb_luigi_sheet_41
+    21300092: smb_luigi_sheet_42
+    21300094: smb_luigi_sheet_43
+    21300096: smb_luigi_sheet_44
+    21300098: smb_luigi_sheet_45
+    21300100: smb_luigi_sheet_46
+    21300102: smb_luigi_sheet_47
+    21300104: smb_luigi_sheet_48
+    21300106: smb_luigi_sheet_49
+    21300108: smb_luigi_sheet_50
+    21300110: smb_luigi_sheet_51
+    21300112: smb_luigi_sheet_52
+    21300114: smb_luigi_sheet_53
+    21300116: smb_luigi_sheet_54
+    21300118: smb_luigi_sheet_55
+    21300120: smb_luigi_sheet_56
+    21300122: smb_luigi_sheet_57
+    21300124: smb_luigi_sheet_58
+    21300126: smb_luigi_sheet_59
+    21300128: smb_luigi_sheet_60
+    21300130: smb_luigi_sheet_61
+    21300132: smb_luigi_sheet_62
+    21300134: smb_luigi_sheet_63
+    21300136: smb_luigi_sheet_64
+    21300138: smb_luigi_sheet_65
+    21300140: smb_luigi_sheet_66
+    21300142: smb_luigi_sheet_67
+    21300144: smb_luigi_sheet_68
+    21300146: smb_luigi_sheet_69
+    21300148: smb_luigi_sheet_70
+    21300150: smb_luigi_sheet_71
+    21300152: smb_luigi_sheet_72
+    21300154: smb_luigi_sheet_73
+    21300156: smb_luigi_sheet_74
+    21300158: smb_luigi_sheet_75
+    21300160: smb_luigi_sheet_76
+    21300162: smb_luigi_sheet_77
+    21300164: smb_luigi_sheet_78
+    21300166: smb_luigi_sheet_79
+    21300168: smb_luigi_sheet_80
+    21300170: smb_luigi_sheet_81
+    21300172: smb_luigi_sheet_82
+    21300174: smb_luigi_sheet_83
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: luigi1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 173
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: luigi2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 172
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: luigi3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 172
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: luigi4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: luigi0
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 172
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
