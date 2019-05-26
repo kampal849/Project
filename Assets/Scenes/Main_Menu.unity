@@ -1812,6 +1812,47 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5020760733756035808, guid: 1ed323dc927623f459b24e48d8a6f7a9,
+        type: 3}
+      propertyPath: m_Name
+      value: TMP SubMeshUI [Roboto-Bold SDF Material + LiberationSans SDF Atlas]
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109882423835462374, guid: 1ed323dc927623f459b24e48d8a6f7a9,
+        type: 3}
+      propertyPath: m_text
+      value: Mobilna gra, w ktorej gracz musi zbic wszystkie bloki odbijajac pilke
+        od paletki
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109882423835462374, guid: 1ed323dc927623f459b24e48d8a6f7a9,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109882423835462374, guid: 1ed323dc927623f459b24e48d8a6f7a9,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109882423835462374, guid: 1ed323dc927623f459b24e48d8a6f7a9,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109882423835462374, guid: 1ed323dc927623f459b24e48d8a6f7a9,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109882423835462374, guid: 1ed323dc927623f459b24e48d8a6f7a9,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109882423835462374, guid: 1ed323dc927623f459b24e48d8a6f7a9,
+        type: 3}
+      propertyPath: m_textInfo.materialCount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2419563064920714373, guid: 1ed323dc927623f459b24e48d8a6f7a9,
         type: 3}
       propertyPath: m_padding

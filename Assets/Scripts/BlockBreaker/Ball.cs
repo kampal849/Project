@@ -64,7 +64,7 @@ public class Ball : MonoBehaviour
             else
             {
                 int randomChance = Random.Range(1, 101);
-                if (randomChance < 50)
+                if (randomChance > 95)
                 {
                     Instantiate(powerUp, collision.transform.position, collision.transform.rotation);
                 }

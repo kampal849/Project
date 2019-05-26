@@ -9,10 +9,11 @@ public class Paddle : MonoBehaviour
     public float rightScreenEdge;
     public float leftScreenEdge;
     public gameManager gm;
+    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -34,6 +35,24 @@ public class Paddle : MonoBehaviour
         {
             transform.position = new Vector2(rightScreenEdge, transform.position.y);
         }
+
+    }
+
+    public void moveRight()
+    {
+        //transform.Translate(Vector2.right * 1 * Time.deltaTime * speed);
+        rb.velocity = new Vector2(speed, 0);
+    }
+
+    public void moveLeft()
+    {
+        //transform.Translate(Vector2.right * -1 * Time.deltaTime * speed);
+        rb.velocity = new Vector2(-speed, 0);
+    }
+
+    public void stay()
+    {
+        rb.velocity = Vector2.zero;
 
     }
 
